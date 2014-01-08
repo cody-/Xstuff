@@ -9,4 +9,4 @@ Xcode 5 plugin with some usefull stuff:
 - Build & Run (Xcode will be relaunched automatically)
 
 #### Uninstall
-- Remove directory `~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/Xstuff.xcplugin
+- Remove directory `~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/Xstuff.xcplugin`
