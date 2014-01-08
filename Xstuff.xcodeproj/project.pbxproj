@@ -10,7 +10,7 @@
 		627E442A187D62D000EB769A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627E4429187D62D000EB769A /* AppKit.framework */; };
 		627E442C187D62D000EB769A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627E442B187D62D000EB769A /* Foundation.framework */; };
 		627E4432187D62D000EB769A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 627E4430187D62D000EB769A /* InfoPlist.strings */; };
-		627E4435187D62D000EB769A /* Xstuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 627E4434187D62D000EB769A /* Xstuff.m */; };
+		627E4435187D62D000EB769A /* Xstuff.mm in Sources */ = {isa = PBXBuildFile; fileRef = 627E4434187D62D000EB769A /* Xstuff.mm */; };
 		627E443E187D632300EB769A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 627E443C187D632300EB769A /* README.md */; };
 		627E443F187D632300EB769A /* run.sh in Resources */ = {isa = PBXBuildFile; fileRef = 627E443D187D632300EB769A /* run.sh */; };
 /* End PBXBuildFile section */
@@ -22,7 +22,7 @@
 		627E442F187D62D000EB769A /* Xstuff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Xstuff-Info.plist"; sourceTree = "<group>"; };
 		627E4431187D62D000EB769A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		627E4433187D62D000EB769A /* Xstuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Xstuff.h; sourceTree = "<group>"; };
-		627E4434187D62D000EB769A /* Xstuff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Xstuff.m; sourceTree = "<group>"; };
+		627E4434187D62D000EB769A /* Xstuff.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Xstuff.mm; sourceTree = "<group>"; };
 		627E4436187D62D000EB769A /* Xstuff-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xstuff-Prefix.pch"; sourceTree = "<group>"; };
 		627E443C187D632300EB769A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		627E443D187D632300EB769A /* run.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run.sh; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			children = (
 				627E442E187D62D000EB769A /* Supporting Files */,
 				627E4433187D62D000EB769A /* Xstuff.h */,
-				627E4434187D62D000EB769A /* Xstuff.m */,
+				627E4434187D62D000EB769A /* Xstuff.mm */,
 			);
 			path = Xstuff;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				627E4435187D62D000EB769A /* Xstuff.m in Sources */,
+				627E4435187D62D000EB769A /* Xstuff.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +288,7 @@
 				627E443B187D62D000EB769A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
