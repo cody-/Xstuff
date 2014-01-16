@@ -7,15 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6240AAB2188838020028858E /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240AAAF188838020028858E /* libgmock.a */; };
+		6240AAB3188838020028858E /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240AAB0188838020028858E /* libgtest_main.a */; };
+		6240AAB4188838020028858E /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240AAB1188838020028858E /* libgtest.a */; };
+		6240AAB5188838060028858E /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240AAB1188838020028858E /* libgtest.a */; };
+		6240AAB6188838080028858E /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240AAB0188838020028858E /* libgtest_main.a */; };
+		6240AAB71888380A0028858E /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240AAAF188838020028858E /* libgmock.a */; };
+		6240AAB91888388D0028858E /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6240AAB81888388D0028858E /* test.cpp */; };
+		6240AABD18883D440028858E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6240AABC18883D440028858E /* .gitignore */; };
 		627E442A187D62D000EB769A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627E4429187D62D000EB769A /* AppKit.framework */; };
 		627E442C187D62D000EB769A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627E442B187D62D000EB769A /* Foundation.framework */; };
 		627E4432187D62D000EB769A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 627E4430187D62D000EB769A /* InfoPlist.strings */; };
 		627E4435187D62D000EB769A /* Xstuff.mm in Sources */ = {isa = PBXBuildFile; fileRef = 627E4434187D62D000EB769A /* Xstuff.mm */; };
 		627E443E187D632300EB769A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 627E443C187D632300EB769A /* README.md */; };
 		627E443F187D632300EB769A /* run.sh in Resources */ = {isa = PBXBuildFile; fileRef = 627E443D187D632300EB769A /* run.sh */; };
+		62F435C5187F02BF0010E4AF /* env-setup.sh in Resources */ = {isa = PBXBuildFile; fileRef = 62F435C4187F02BF0010E4AF /* env-setup.sh */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		62F435B8187EFE9E0010E4AF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6240AAAF188838020028858E /* libgmock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmock.a; path = gmock/lib/libgmock.a; sourceTree = "<group>"; };
+		6240AAB0188838020028858E /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = gmock/lib/libgtest_main.a; sourceTree = "<group>"; };
+		6240AAB1188838020028858E /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = gmock/lib/libgtest.a; sourceTree = "<group>"; };
+		6240AAB81888388D0028858E /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		6240AABC18883D440028858E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		627E4426187D62D000EB769A /* Xstuff.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xstuff.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		627E4429187D62D000EB769A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		627E442B187D62D000EB769A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -26,6 +52,8 @@
 		627E4436187D62D000EB769A /* Xstuff-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xstuff-Prefix.pch"; sourceTree = "<group>"; };
 		627E443C187D632300EB769A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		627E443D187D632300EB769A /* run.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run.sh; sourceTree = "<group>"; };
+		62F435BA187EFE9E0010E4AF /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		62F435C4187F02BF0010E4AF /* env-setup.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "env-setup.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,8 +61,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6240AAB3188838020028858E /* libgtest_main.a in Frameworks */,
+				6240AAB4188838020028858E /* libgtest.a in Frameworks */,
 				627E442A187D62D000EB769A /* AppKit.framework in Frameworks */,
 				627E442C187D62D000EB769A /* Foundation.framework in Frameworks */,
+				6240AAB2188838020028858E /* libgmock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62F435B7187EFE9E0010E4AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6240AAB5188838060028858E /* libgtest.a in Frameworks */,
+				6240AAB6188838080028858E /* libgtest_main.a in Frameworks */,
+				6240AAB71888380A0028858E /* libgmock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,10 +86,13 @@
 			isa = PBXGroup;
 			children = (
 				627E442D187D62D000EB769A /* Xstuff */,
+				62F435C3187F00CC0010E4AF /* test */,
 				627E4428187D62D000EB769A /* Frameworks */,
 				627E4427187D62D000EB769A /* Products */,
 				627E443C187D632300EB769A /* README.md */,
+				62F435C4187F02BF0010E4AF /* env-setup.sh */,
 				627E443D187D632300EB769A /* run.sh */,
+				6240AABC18883D440028858E /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				627E4426187D62D000EB769A /* Xstuff.xcplugin */,
+				62F435BA187EFE9E0010E4AF /* test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +108,9 @@
 		627E4428187D62D000EB769A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6240AAAF188838020028858E /* libgmock.a */,
+				6240AAB0188838020028858E /* libgtest_main.a */,
+				6240AAB1188838020028858E /* libgtest.a */,
 				627E4429187D62D000EB769A /* AppKit.framework */,
 				627E442B187D62D000EB769A /* Foundation.framework */,
 			);
@@ -89,6 +137,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		62F435C3187F00CC0010E4AF /* test */ = {
+			isa = PBXGroup;
+			children = (
+				6240AAB81888388D0028858E /* test.cpp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +164,24 @@
 			productName = Xstuff;
 			productReference = 627E4426187D62D000EB769A /* Xstuff.xcplugin */;
 			productType = "com.apple.product-type.bundle";
+		};
+		62F435B9187EFE9E0010E4AF /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62F435C2187EFE9E0010E4AF /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				62F435C7187F066D0010E4AF /* Setup environment */,
+				62F435B6187EFE9E0010E4AF /* Sources */,
+				62F435B7187EFE9E0010E4AF /* Frameworks */,
+				62F435B8187EFE9E0010E4AF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = 62F435BA187EFE9E0010E4AF /* test */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -131,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				627E4425187D62D000EB769A /* Xstuff */,
+				62F435B9187EFE9E0010E4AF /* test */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +215,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6240AABD18883D440028858E /* .gitignore in Resources */,
+				62F435C5187F02BF0010E4AF /* env-setup.sh in Resources */,
 				627E443F187D632300EB769A /* run.sh in Resources */,
 				627E443E187D632300EB769A /* README.md in Resources */,
 				627E4432187D62D000EB769A /* InfoPlist.strings in Resources */,
@@ -148,12 +225,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62F435C7187F066D0010E4AF /* Setup environment */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Setup environment";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/bash --login";
+			shellScript = "cd ${PROJECT_DIR}\n./env-setup.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		627E4422187D62D000EB769A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				627E4435187D62D000EB769A /* Xstuff.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62F435B6187EFE9E0010E4AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6240AAB91888388D0028858E /* test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +351,10 @@
 				GCC_PREFIX_HEADER = "Xstuff/Xstuff-Prefix.pch";
 				INFOPLIST_FILE = "Xstuff/Xstuff-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cody0/personal/Projects/Xstuff/gmock/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xcplugin;
 			};
@@ -264,8 +370,48 @@
 				GCC_PREFIX_HEADER = "Xstuff/Xstuff-Prefix.pch";
 				INFOPLIST_FILE = "Xstuff/Xstuff-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cody0/personal/Projects/Xstuff/gmock/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+		62F435C0187EFE9E0010E4AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/gmock/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/gmock/lib",
+					/Users/cody0/personal/Projects/Xstuff/gmock/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62F435C1187EFE9E0010E4AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/gmock/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/gmock/lib",
+					/Users/cody0/personal/Projects/Xstuff/gmock/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -286,6 +432,15 @@
 			buildConfigurations = (
 				627E443A187D62D000EB769A /* Debug */,
 				627E443B187D62D000EB769A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62F435C2187EFE9E0010E4AF /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62F435C0187EFE9E0010E4AF /* Debug */,
+				62F435C1187EFE9E0010E4AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
