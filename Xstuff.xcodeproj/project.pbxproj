@@ -13,8 +13,10 @@
 		6240AAB5188838060028858E /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240AAB1188838020028858E /* libgtest.a */; };
 		6240AAB6188838080028858E /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240AAB0188838020028858E /* libgtest_main.a */; };
 		6240AAB71888380A0028858E /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240AAAF188838020028858E /* libgmock.a */; };
-		6240AAB91888388D0028858E /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6240AAB81888388D0028858E /* test.cpp */; };
 		6240AABD18883D440028858E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6240AABC18883D440028858E /* .gitignore */; };
+		6240AAC81889962A0028858E /* ut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6240AAC71889962A0028858E /* ut.cpp */; };
+		6240AACB1889C80D0028858E /* RecentFilesNavigatorImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6240AAC91889C80D0028858E /* RecentFilesNavigatorImpl.cpp */; };
+		6240AACC1889C80D0028858E /* RecentFilesNavigatorImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6240AAC91889C80D0028858E /* RecentFilesNavigatorImpl.cpp */; };
 		627E442A187D62D000EB769A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627E4429187D62D000EB769A /* AppKit.framework */; };
 		627E442C187D62D000EB769A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627E442B187D62D000EB769A /* Foundation.framework */; };
 		627E4432187D62D000EB769A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 627E4430187D62D000EB769A /* InfoPlist.strings */; };
@@ -40,8 +42,12 @@
 		6240AAAF188838020028858E /* libgmock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmock.a; path = gmock/lib/libgmock.a; sourceTree = "<group>"; };
 		6240AAB0188838020028858E /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = gmock/lib/libgtest_main.a; sourceTree = "<group>"; };
 		6240AAB1188838020028858E /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = gmock/lib/libgtest.a; sourceTree = "<group>"; };
-		6240AAB81888388D0028858E /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 		6240AABC18883D440028858E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6240AAC3188993750028858E /* RecentFilesNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentFilesNavigator.h; sourceTree = "<group>"; };
+		6240AAC51889944E0028858E /* RecentFilesPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecentFilesPanel.h; sourceTree = "<group>"; };
+		6240AAC71889962A0028858E /* ut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ut.cpp; sourceTree = "<group>"; };
+		6240AAC91889C80D0028858E /* RecentFilesNavigatorImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecentFilesNavigatorImpl.cpp; sourceTree = "<group>"; };
+		6240AACA1889C80D0028858E /* RecentFilesNavigatorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentFilesNavigatorImpl.h; sourceTree = "<group>"; };
 		627E4426187D62D000EB769A /* Xstuff.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xstuff.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		627E4429187D62D000EB769A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		627E442B187D62D000EB769A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -82,6 +88,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6240AAC2188993750028858E /* RecentFilesNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				6240AAC3188993750028858E /* RecentFilesNavigator.h */,
+				6240AACA1889C80D0028858E /* RecentFilesNavigatorImpl.h */,
+				6240AAC91889C80D0028858E /* RecentFilesNavigatorImpl.cpp */,
+			);
+			path = RecentFilesNavigator;
+			sourceTree = "<group>";
+		};
+		6240AAC4188994380028858E /* XcodeAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6240AAC51889944E0028858E /* RecentFilesPanel.h */,
+			);
+			path = XcodeAPI;
+			sourceTree = "<group>";
+		};
+		6240AAC6188995F00028858E /* RecentFilesNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				6240AAC71889962A0028858E /* ut.cpp */,
+			);
+			path = RecentFilesNavigator;
+			sourceTree = "<group>";
+		};
 		627E441D187D62D000EB769A = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				627E442E187D62D000EB769A /* Supporting Files */,
+				6240AAC2188993750028858E /* RecentFilesNavigator */,
+				6240AAC4188994380028858E /* XcodeAPI */,
 				627E4433187D62D000EB769A /* Xstuff.h */,
 				627E4434187D62D000EB769A /* Xstuff.mm */,
 			);
@@ -140,7 +174,7 @@
 		62F435C3187F00CC0010E4AF /* test */ = {
 			isa = PBXGroup;
 			children = (
-				6240AAB81888388D0028858E /* test.cpp */,
+				6240AAC6188995F00028858E /* RecentFilesNavigator */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -247,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6240AACB1889C80D0028858E /* RecentFilesNavigatorImpl.cpp in Sources */,
 				627E4435187D62D000EB769A /* Xstuff.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,7 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6240AAB91888388D0028858E /* test.cpp in Sources */,
+				6240AACC1889C80D0028858E /* RecentFilesNavigatorImpl.cpp in Sources */,
+				6240AAC81889962A0028858E /* ut.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
