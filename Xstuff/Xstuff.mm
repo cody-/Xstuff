@@ -7,11 +7,7 @@
 //
 
 #import "Xstuff.h"
-
-namespace {
-    constexpr int KEY_CTRL = 59;
-    constexpr int KEY_ESC = 53;
-}
+#import <Carbon/Carbon.h> // Key codes kVK_*
 
 static Xstuff *sharedPlugin;
 @interface Xstuff()
@@ -41,8 +37,8 @@ static Xstuff *sharedPlugin;
         
         // Ctrl + key down
         [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask handler:^NSEvent*(NSEvent *event) {
-            if([event modifierFlags] & NSControlKeyMask && [event keyCode] == KEY_ESC) {
-                NSLog(@"Ctrl + ESC Down");
+            if([event modifierFlags] & NSControlKeyMask && [event keyCode] == kVK_Tab) {
+                NSLog(@"Ctrl + Tab Down");
             }
 
             return event;
@@ -50,15 +46,15 @@ static Xstuff *sharedPlugin;
 
         // key up
         [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyUpMask handler:^NSEvent*(NSEvent *event) {
-            if([event keyCode] == KEY_ESC) {
-                NSLog(@"ESC UP");
+            if([event keyCode] == kVK_Tab) {
+                NSLog(@"Tab UP");
             }
             return event;
         }];
 
         // Ctrl up/down
         [NSEvent addLocalMonitorForEventsMatchingMask:NSFlagsChangedMask handler:^NSEvent*(NSEvent *event) {
-            if ([event keyCode] != KEY_CTRL) {
+            if ([event keyCode] != kVK_Control) {
                 return event;
             }
 

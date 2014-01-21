@@ -1,7 +1,7 @@
 ## Xstuff
 
 Xcode 5 plugin with some usefull stuff:
-- Recent files navigation by `Ctrl` + `Esc`
+- Recent files navigation by `Ctrl` + `Tab`
 
 #### Install
 - Clone repo
