@@ -10,10 +10,15 @@
 #define __Xstuff__RecentFilesNavigatorImpl__
 
 #include "./RecentFilesNavigator.h"
+#include "./state/StateOwner.h"
+#include <memory>
+
+class State;
 
 ///
 class RecentFilesNavigatorImpl
     : public RecentFilesNavigator
+    , public StateOwner
 {
 public:
     RecentFilesNavigatorImpl();
@@ -23,6 +28,11 @@ public:
     void ModKeyUp() override;
     void SwitchKeyDown() override;
     void SwitchKeyUp() override;
+
+    void SetState(std::unique_ptr<State> state) override;
+
+private:
+    std::unique_ptr<State> state_;
 };
 
 #endif /* defined(__Xstuff__RecentFilesNavigatorImpl__) */

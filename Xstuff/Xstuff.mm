@@ -8,9 +8,13 @@
 
 #import "Xstuff.h"
 #import <Carbon/Carbon.h> // Key codes kVK_*
+#import "./RecentFilesNavigator/RecentFilesNavigator.h"
 
 static Xstuff *sharedPlugin;
 @interface Xstuff()
+{
+    RecentFilesNavigator* recentFilesNavigator_;
+}
 
 @property (nonatomic, strong) NSBundle *bundle;
 @end
@@ -34,11 +38,13 @@ static Xstuff *sharedPlugin;
     if (self = [super init]) {
         // reference to plugin's bundle, for resource acccess
         self.bundle = plugin;
+        recentFilesNavigator_ = RecentFilesNavigator::New();
         
         // Ctrl + key down
         [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask handler:^NSEvent*(NSEvent *event) {
             if([event modifierFlags] & NSControlKeyMask && [event keyCode] == kVK_Tab) {
                 NSLog(@"Ctrl + Tab Down");
+                recentFilesNavigator_->SwitchKeyDown();
             }
 
             return event;
@@ -48,6 +54,7 @@ static Xstuff *sharedPlugin;
         [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyUpMask handler:^NSEvent*(NSEvent *event) {
             if([event keyCode] == kVK_Tab) {
                 NSLog(@"Tab UP");
+                recentFilesNavigator_->SwitchKeyUp();
             }
             return event;
         }];
@@ -60,8 +67,10 @@ static Xstuff *sharedPlugin;
 
             if([event modifierFlags] & NSControlKeyMask) {
                 NSLog(@"CtrlDown");
+                recentFilesNavigator_->ModKeyDown();
             } else {
                 NSLog(@"CtrlUp");
+                recentFilesNavigator_->ModKeyUp();
             }
 
             return event;
@@ -72,6 +81,7 @@ static Xstuff *sharedPlugin;
 
 - (void)dealloc
 {
+    delete recentFilesNavigator_;
 }
 
 @end
